@@ -18,6 +18,8 @@ const calculateShapeArea = (shapeDetails: ShapeType): number => {
     return Math.PI * shapeDetails?.radius ** 2;
   } else if (shapeDetails?.shape === "rectangle") {
     return shapeDetails?.height * shapeDetails?.width;
+  } else {
+    return 0;
   }
 };
 
