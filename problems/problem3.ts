@@ -2,18 +2,11 @@
 
 const countWordOccurrences = (sentence: string, word: string): number => {
   const splitSentence = sentence.toLocaleLowerCase().split(" ");
-
-  console.log(splitSentence)
   let wordCount = 0;
-  for (let word of splitSentence){
-    if(word === word.toLocaleLowerCase()){
-      word++
+  for (let wordOfSentence of splitSentence) {
+    if (wordOfSentence === word.toLocaleLowerCase()) {
+      wordCount++;
     }
   }
-}
-
-// Sample Input:
-countWordOccurrences("I love typescript", "typescript");
-
-// Sample Output:
-// 1;
+  return wordCount;
+};
