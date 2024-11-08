@@ -3,7 +3,7 @@
 const sumArray = (numArray: number[]): number => {
   let sum: number = 0;
   for (let number of numArray) {
-    sum = sum + number;
+    sum += number;
   }
   return sum;
 };
